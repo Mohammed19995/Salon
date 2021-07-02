@@ -1,0 +1,17 @@
+{
+    "/admin_assets/app/js/app.js": "/admin_assets/app/js/app.js",
+    "/admin_assets/custom/js/admins/admin.js": "/admin_assets/custom/js/admins/admin.js",
+    "/admin_assets/custom/js/categories/category.js": "/admin_assets/custom/js/categories/category.js",
+    "/admin_assets/custom/js/cities/city.js": "/admin_assets/custom/js/cities/city.js",
+    "/admin_assets/custom/js/countries/country.js": "/admin_assets/custom/js/countries/country.js",
+    "/admin_assets/custom/js/employees/employee.js": "/admin_assets/custom/js/employees/employee.js",
+    "/admin_assets/custom/js/galleries/gallery.js": "/admin_assets/custom/js/galleries/gallery.js",
+    "/admin_assets/custom/js/neighborhoods/neighborhood.js": "/admin_assets/custom/js/neighborhoods/neighborhood.js",
+    "/admin_assets/custom/js/notifications/notification.js": "/admin_assets/custom/js/notifications/notification.js",
+    "/admin_assets/custom/js/roles/role.js": "/admin_assets/custom/js/roles/role.js",
+    "/admin_assets/custom/js/settings/setting.js": "/admin_assets/custom/js/settings/setting.js",
+    "/admin_assets/custom/js/users/user.js": "/admin_assets/custom/js/users/user.js",
+    "/js/app.js": "/js/app.js",
+    "/admin_assets/app/css/app.css": "/admin_assets/app/css/app.css",
+    "/css/app.css": "/css/app.css"
+}

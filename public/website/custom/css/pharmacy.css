@@ -1,0 +1,63 @@
+.sub-pharmacy-main-content{
+    background: 0% 0% no-repeat padding-box padding-box rgb(247, 247, 247);
+    padding: 30px 15px;
+    width: calc(100% - 600px);
+    margin: 0px auto;
+    height: 100%;
+}
+.sub-pharmacy-main-content .row{
+    margin-left: 0;
+    margin-right: 0;
+}
+.sub-pharmacy-header h2{
+    color:#1650A3;
+    font-family: TajawalBold;
+    font-size:26px;
+    margin-bottom: 25px;
+}
+.sub-pharmacy-header span{
+    color: #384364;
+}
+.sub-pharmacy-head{
+    text-align: right;
+}
+.sub-pharmacy-head p{
+    color: #B7B7B7;
+    font-family: TajawalMedium;
+    font-size: 18px;
+}
+.sub-pharmacy-head span{
+    color: #1650A3;
+    font-family: TajawalMedium;
+    font-size: 18px;
+}
+.sub-pharmacy-details{
+    background: #ffffff;
+    padding: 20px;
+    margin-top: 25px
+}
+.sub-pharmacy-img img{
+    width: 100%;
+}
+.sub-pharmacy-info input{
+    border: 2px solid #F1F3F4 !important;
+    height: 48px !important;
+}
+.reg-form input{
+    border: none !important;
+}
+.sub-pharmacy-info select{
+    border: none !important;
+    color: #c7c7c7 !important;
+    height: 45px !important;
+    background: url(../images/arrow-down.svg) 8% center / 2% no-repeat #FAFAFB !important;
+}
+#map {
+    height: 162px;
+}
+
+@media screen and (max-width : 1200px) {
+    .sub-pharmacy-main-content{
+        width:100%
+    }
+}

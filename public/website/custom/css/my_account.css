@@ -1,0 +1,268 @@
+.account-main-content {
+    background: 0% 0% no-repeat padding-box padding-box rgb(247, 247, 247);
+    padding: 30px 15px;
+    width: calc(100% - 600px);
+    margin: 0px auto;
+    height: 100%;
+}
+.account-main-content .row{
+    margin-left: 0;
+    margin-right: 0;
+}
+.my-account-head{
+    margin-top: 25px;
+}
+.account-head{
+    text-align: right;
+}
+.account-head p{
+    color: #B7B7B7;
+    font-family: TajawalMedium;
+    font-size: 18px;
+}
+.account-head span{
+    color: #1650A3;
+    font-family: TajawalMedium;
+    font-size: 18px;
+}
+.account-header h2{
+    color:#1650A3;
+    font-family: TajawalBold;
+    font-size:26px;
+}
+.account-header , .account-btn{
+    padding: 0;
+}
+.account-btn input{
+    position: relative !important;
+    border: none;
+    height: 45px;
+}
+.account-btn img {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    z-index: 1;
+}
+.btn1{
+    color: #1650A3;
+}
+.btn2{
+    background: #384364;
+    color: #fff;
+}
+.account-tabs{
+    background: white;
+}
+/***/
+.nav-link{
+    color: #111;
+    font-family: TajawalMedium;
+    font-size: 17px;
+    display: block;
+    padding: 1rem 1rem;
+    border-bottom: 4px solid #E5E8EA;
+    border-radius: unset !important;
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+    color: #1650A3;
+    background-color: #fff;
+    border-bottom: 4px solid #1650A3;
+}
+.tab-pane{
+    text-align: right;
+}
+#map {
+    height: 162px;
+}
+.map-input input{
+    border-radius: 0 !important;
+    background: #FAFAFB;
+    border: none;
+}
+.tab-content{
+    padding: 15px 20px;
+}
+.tab-content input{
+    border: 2px solid #F1F3F4 !important;
+    height: 48px !important;
+}
+.reg-form input{
+    border: none !important;
+}
+.order-list-btn button{
+    border: 2px solid #F1F3F4 !important;
+    height: 48px !important;
+    background: white;
+    width: 150px;
+    color: #c3c2c2;
+    font-family: TajawalBold;
+    font-size: 16px;
+}
+.order-list-btn button:hover{
+    border-color: #1650A3 !important;
+    color: #1650A3;
+}
+.table-button .add-to-car button{
+    width: 115px;
+    height: 35px;
+    background: #384364;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding-right: 23px;
+    font-family: TajawalMedium;
+    font-size: 14px;
+
+}
+.add-to-car{
+    position: relative;
+}
+.table-button .add-to-car img{
+    position: absolute;
+    right: 10px;
+    top: 3px;
+    z-index: 1;
+    height: 15px;
+    width: 15px;
+}
+.table-button .details button , .table-button .accept button{
+    width: 75px;
+    height: 35px;
+    background: #1650A3;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-family: TajawalMedium;
+    font-size: 14px;
+}
+.table-button{
+    width: 195px;
+}
+.table-button .details1 button{
+    border: 1px solid #384364;
+    color: #384364;
+    background: #fff;
+    border-radius: 4px;
+    font-family: TajawalMedium;
+    font-size: 14px;
+    width: 75px;
+    height: 35px;
+}
+.table thead th {
+    border-bottom: 1px solid #dee2e6;
+    color:#a7a6a6;
+    font-family: TajawalMedium;
+    font-size: 14px;
+    font-weight: inherit;
+}
+.table td, .table th {
+    padding: .75rem;
+    vertical-align: middle;
+    color: #384364;
+    border-bottom: 1px solid #F6F7F8;
+    border-top: none;
+    font-family: TajawalMedium;
+    font-size: 16px;
+    /* padding: 25px 0; */
+}
+.order-list-table , .order-sub-list-table , .order-main-list-table{
+    margin-top: 15px;
+    overflow-x: scroll;
+}
+.location-btn{
+    position: relative;
+}
+.location-btn button{
+    background: #1650A3;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-family: TajawalMedium;
+    font-size: 14px;
+    width: 85px;
+    height: 35px;
+    padding-right: 30px;
+}
+.location-btn img{
+    position: absolute;
+    top: 3px;
+    right: 10px;
+}
+.action-button{
+    width: 80px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+.action-button .edit{
+    background: #384364;
+    padding: 7px 5px;
+    border-radius: 4px;
+    margin-left: 10px;
+}
+.action-button .delete , .table-button .delete{
+    background:#EC041C;
+    background: #EC041C;
+    padding: 7px 7px;
+    border-radius: 4px;
+    margin-left: 10px;
+}
+.table-button .delete{
+    margin-left: 4px;
+    padding: 7px 10px 7px 7px;
+}
+.order-list .nav-link{
+    color: #c1c1c1;
+    border: 2px solid #F2F3F4;
+    font-family: TajawalMedium;
+    font-size: 17px;
+    display: block;
+    padding: 1rem 1rem;
+    /* border-bottom: 4px solid #E5E8EA; */
+    border-radius: unset !important;
+}
+.order-list .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #1650A3;
+    background-color: #fff;
+    border-color: #1650A3;
+    border-bottom: 2px solid #1650A3;
+}
+@media screen and (max-width : 1200px) {
+    .account-main-content{
+        width:100%
+    }
+}
+@media (max-width: 576px) {
+    .order-list .nav{
+        padding: 0;
+    }
+    .order-list .nav-link{
+        padding: 10px 5px;
+    }
+}
+
+/* map */
+ #map {
+       height: 140px;
+   }
+.map-input input{
+    border-radius: 0 !important;
+}
+#pac-input {
+    background-color: #fff;
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 300;
+    margin-left: 29%;
+    padding: 0 11px 0 13px;
+    text-overflow: ellipsis;
+    width: 235px;
+}
+
+#pac-input:focus {
+    border-color: #4d90fe;
+}
+.hidden {
+    display: none;!important;
+}

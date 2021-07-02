@@ -1,0 +1,120 @@
+#buy-car{
+    display: none;
+}
+.pay-main-content{
+    background: 0% 0% no-repeat padding-box padding-box rgb(247, 247, 247);
+    padding: 30px 15px;
+    width: calc(100% - 300px);
+    margin: 0px auto;
+    margin-left: 0;
+    height: 100%;
+}
+.pay-main-content .row{
+    margin-left: 0;
+    margin-right: 0;
+}
+.pay-header h2{
+    color:#1650A3;
+    font-family: TajawalBold;
+    font-size:26px;
+    margin-bottom: 25px;
+}
+.pay-head{
+    text-align: right;
+}
+.pay-head p{
+    color: #B7B7B7;
+    font-family: TajawalMedium;
+    font-size: 18px;
+}
+.pay-head span{
+    color: #1650A3;
+    font-family: TajawalMedium;
+    font-size: 18px;
+}
+.pay-details{
+    background: #ffffff;
+    padding: 20px;
+}
+.table {
+    overflow-x: scroll;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    text-align: right;
+    padding: 8px;
+    border-top: none !important;
+    vertical-align: middle !important;
+    font-family: TajawalMedium;
+    font-size: 20px;
+}
+td:first-child{
+    display: flex;
+    align-items: center;
+}
+th {
+    background-color: #f6f7f87d;
+    color: #262626;
+}
+td img{
+    padding-left: 30px;
+}
+.price-detalis {
+    border-top: 3px solid #F6F7F8;
+}
+.price-detalis p{
+    float: right;
+    margin-bottom: 0 !important;
+    color: #384364;
+    font-family: TajawalMedium;
+    font-size: 22px;
+}
+.price-detalis span{
+    font-family: TajawalMedium;
+    font-size: 22px;
+}
+.price-detalis div{
+    padding: 15px 20px 10px 50px;
+}
+.total-price{
+    margin-top: 10px;
+    padding-bottom: 20px !important;
+    border-top: 3px solid #F6F7F8;
+    border-bottom: 3px solid #F6F7F8;
+}
+.total-price p , .total-price span{
+    font-family: TajawalMedium;
+    font-size: 25px;
+}
+#map {
+    height: 162px;
+}
+.map-input input{
+    border-radius: 0 !important;
+    background: #FAFAFB;
+    border: none;
+}
+/* input::placeholder {
+ color: #384364 !important;
+ font-family: TajawalMedium !important;
+ font-size: 16px !important;
+} */
+.bill-pay h2 , .Payment-method h2{
+    font-family: TajawalBold;
+    font-size:26px;
+    color: #1650A3;
+    margin: 50px 0px 25px 0;
+}
+.Payment-method label {
+    color:#262626;
+    font-size:18px;
+}
+@media screen and (max-width : 1200px) {
+    .pay-main-content{
+        width:100%
+    }
+}

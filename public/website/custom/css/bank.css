@@ -1,0 +1,60 @@
+.transfer-main-content{
+    background: 0% 0% no-repeat padding-box padding-box rgb(247, 247, 247);
+    padding: 30px 15px;
+    width: calc(100% - 600px);
+    margin: 0px auto;
+    height: 100%;
+}
+.transfer-main-content .row{
+    margin-left: 0;
+    margin-right: 0;
+}
+.transfer-header h2{
+    color:#1650A3;
+    font-family: TajawalBold;
+    font-size:26px;
+    margin-bottom: 25px;
+}
+.transfer-header span{
+    color: #384364;
+}
+.transfer-head{
+    text-align: right;
+}
+.transfer-head p{
+    color: #B7B7B7;
+    font-family: TajawalMedium;
+    font-size: 18px;
+}
+.transfer-head span{
+    color: #1650A3;
+    font-family: TajawalMedium;
+    font-size: 18px;
+}
+.transfer-details{
+    background: #ffffff;
+    padding: 20px;
+    margin-top: 25px
+}
+.transfer-img img{
+    width: 100%;
+}
+.transfer-info input{
+    border: 2px solid #F1F3F4 !important;
+    height: 48px !important;
+}
+.reg-form input{
+    border: none !important;
+}
+.transfer-info select{
+    border: none !important;
+    color: #c7c7c7 !important;
+    height: 45px !important;
+    background: url(../../images/arrow-down.svg) 8% center / 2% no-repeat #FAFAFB !important;
+}
+
+@media screen and (max-width : 1200px) {
+    .transfer-main-content{
+        width:100%
+    }
+}

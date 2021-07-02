@@ -1,0 +1,107 @@
+body, h3, span {
+    font-family: Tahoma !important;
+}
+.table.table-striped thead th{
+    font-weight: bold;
+}
+table.dataTable{
+    font-weight: bold!important;
+    font-family: Tahoma !important;
+}
+.table thead th{
+    font-weight: bold!important;
+}
+.table.table-head-custom thead th {
+    color: #0b0b0b!important;
+}
+/********************/
+
+.aside-menu .menu-nav > .menu-item > .menu-link .menu-icon {
+    color: white;
+}
+.aside-menu .menu-nav > .menu-item > .menu-link .menu-text {
+    color: white;
+}
+.aside-menu .menu-nav > .menu-item.menu-item-active > .menu-link .menu-icon {
+    color: #00e0e0 !important;
+}
+.aside-menu .menu-nav > .menu-item.menu-item-active > .menu-link .menu-text {
+    color: #00e0e0 !important;
+}
+
+label {
+    color: black !important;
+}
+
+.m-invoice-2 .m-invoice__wrapper .m-invoice__head .m-invoice__container .m-invoice__items .m-invoice__item > span {
+    color: black !important;
+}
+
+.form-control {
+    border-color: #aeb0b9 !important;
+}
+.bootstrap-select > .dropdown-toggle.btn-light, .bootstrap-select > .dropdown-toggle.btn-secondary {
+    border-color: #aeb0b9 !important;
+}
+.select2-selection {
+    border-color: #aeb0b9 !important;
+}
+/************************/
+.tabs-container .nav-tabs > li {
+    float: right;
+}
+.alert-success {
+    color: white;
+    background-color: #45ccb1;
+    border-color: #39c9ac;
+}
+.alert-danger {
+    color: #fff;
+    background-color: #f66e84;
+    border-color: #f55f78;
+}
+.hidden {
+    display: none!important;
+}
+/* dataTable */
+.card {
+    border: none!important;
+}
+.dataTable td {
+    padding: 2px 2px!important;
+}
+
+/* general */
+.pointer {
+    cursor: pointer;
+}
+#kt_wrapper {
+    margin-top: -5%;
+}
+.dir-ltr {
+    direction: ltr;
+}
+
+/**********************/
+.aside {
+    width: 190px;
+}
+@media (min-width: 992px) {
+    .aside-enabled .header.header-fixed {
+        right: 190px;
+    }
+    .aside-fixed .wrapper {
+        padding-right: 140px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container, .container-fluid, .container-sm, .container-md, .container-lg, .container-xl, .container-xxl {
+        padding-right: 63px;
+    }
+}
+@media (min-width: 1200px) {
+    .container, .container-sm, .container-md, .container-lg, .container-xl {
+        max-width: 1240px;
+    }
+}

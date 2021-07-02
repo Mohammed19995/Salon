@@ -1,0 +1,152 @@
+.pay-main-content{
+    background: 0% 0% no-repeat padding-box padding-box rgb(247, 247, 247);
+    padding: 30px 15px;
+    width: calc(100% - 600px);
+    margin: 0px auto;
+    height: 100%;
+}
+.pay-main-content .row{
+    margin-left: 0;
+    margin-right: 0;
+}
+.pay-header h2{
+    color:#1650A3;
+    font-family: TajawalBold;
+    font-size:26px;
+    margin-bottom: 25px;
+}
+.pay-header span{
+    color: #384364;
+}
+.pay-head{
+    text-align: right;
+}
+.pay-head p{
+    color: #B7B7B7;
+    font-family: TajawalMedium;
+    font-size: 18px;
+}
+.pay-head span{
+    color: #1650A3;
+    font-family: TajawalMedium;
+    font-size: 18px;
+}
+.pay-details{
+    background: #ffffff;
+    padding: 20px;
+}
+.pay-details .table{
+    overflow-x: auto;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    text-align: center;
+    padding: 8px;
+    border-top: none !important;
+    vertical-align: middle !important;
+    font-family: TajawalMedium;
+    font-size: 20px;
+    font-weight: inherit;
+    min-width: 100px;
+}
+td{
+    text-align: center;
+}
+td:first-child ,th:first-child{
+    display: flex;
+    align-items: center;
+    text-align: right;
+    line-height: 1;
+}
+th {
+    background-color: #f6f7f87d;
+    color: #262626;
+}
+td img{
+    padding-left: 30px;
+}
+.price-detalis {
+    border-top: 3px solid #F6F7F8;
+}
+.price-detalis p{
+    float: right;
+    margin-bottom: 0 !important;
+    color: #384364;
+    font-family: TajawalMedium;
+    font-size: 18px;
+}
+.price-detalis span{
+    color: #384364;
+    font-family: TajawalMedium;
+    font-size: 18px;
+}
+.price-detalis div{
+    padding: 15px 20px 10px 40px;
+}
+.total-price{
+    margin-top: 10px;
+    padding-bottom: 20px !important;
+    border-top: 3px solid #F6F7F8;
+    border-bottom: 3px solid #F6F7F8;
+}
+.total-price p , .total-price span{
+    font-family: TajawalMedium;
+    font-size: 22px;
+}
+.total-price span{
+    color:#1650A3
+}
+.shipping-information {
+    text-align: right;
+}
+.shipping-info h2{
+    font-family: TajawalBold;
+    font-size:26px;
+    color: #1650A3;
+    margin: 50px 0px 25px 0;
+}
+.shipping-information p{
+    color: #262626ad;
+    font-family: TheSans-Bold;
+    font-size:16px;
+}
+.order-btn input{
+    position: relative !important;
+    border: none;
+    height: 45px;
+    background: #1650A3;
+    color: #ffffff;
+    float: left;
+}
+.order-btn button{
+    position: relative !important;
+    border: none;
+    height: 45px;
+    background: #1650A3;
+    color: #ffffff;
+    float: left;
+}
+.order-btn img{
+    position: absolute;
+    top: 13px;
+    right: 15px;
+    z-index: 1;
+}
+@media screen and (max-width : 1200px) {
+    .pay-main-content{
+        width:100%
+    }
+}
+
+
+.select2-container{
+    width: 100%!important;
+}
+.select2-container .select2-selection {
+    height: 38px;!important;
+}
+
