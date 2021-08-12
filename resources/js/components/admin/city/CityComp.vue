@@ -6,7 +6,6 @@
         </div>
         <form class="form">
             <success-error-msg :success="msg.success" :error="msg.error" :traffic_cop="traffic_cop" @update-anyway="updateAnyway"></success-error-msg>
-
             <div class="card-body">
                 <div class="form-group row">
                     <div class="col-lg-4" v-for="locale in locales">

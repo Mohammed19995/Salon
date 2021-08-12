@@ -158,8 +158,8 @@ return [
     'live' => 'بث مباشر',
 
     // categories
-    'categories' => 'التصنيفات',
-    'select_category' => 'اختار التصنيف',
+    'categories' => 'الخدمات',
+    'select_category' => 'اختار الخدمة',
     'parent' => 'الاب',
     'select_parent' => 'اختار الاب',
     'main_category' => 'تصنيف رئيسي',
@@ -379,4 +379,21 @@ return [
 
     // category
     'service_time' => 'مدة الخدمة',
+
+    // salon categories
+    'salon_branches' => 'فروع الصالونات',
+
+
+    // salons
+    'address_ar' => 'العنوان (عربي)',
+    'address_en' => 'العنوان (انجليزي)',
+    'select_branch' => 'اختار فرع الصالون',
+    'address' => 'العنوان',
+    'select_categories' => 'اختار الخدمات',
+    'select_employees' => 'اختار الموظفين',
+    'salons' => 'الصالونات',
+    'salon_id' => 'رقم الصالون',
+
+    // sliders
+    'sliders' => 'السلايدر',
 ];

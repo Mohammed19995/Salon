@@ -22,10 +22,8 @@
         var instagram = {!! $instagram !!};
         var snapchat = {!! $snapchat !!};
         var privacy_policy = {!! $privacy_policy !!};
-        var prevented_goods = {!! $prevented_goods !!};
         var about_us = {!! $about_us !!};
         var about_app = {!! $about_app !!};
-        var app_ratio = {!! $app_ratio !!};
 
     </script>
     <script src="{{url('')}}/admin_assets/js/pages/crud/forms/editors/summernote.js?v=7.0.5"></script>

@@ -10,12 +10,16 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Support\Collection;
 use Spatie\Translatable\HasTranslations;
 
-class UserCatgeory extends Model
+class UserCategory extends Model
 {
 
     protected $table = 'user_categories';
     protected $fillable = ['user_id','category_id'];
 
 
+    // relation
+    public function user() {
+        return $this->belongsTo(User::class , 'user_id');
+    }
 
 }

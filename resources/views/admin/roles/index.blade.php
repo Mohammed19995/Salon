@@ -53,6 +53,6 @@
         var options = {!! $options !!};
         var permissions = {!! $permissions !!};
     </script>
-    <script src="{{url('')}}/admin_assets/plugins/custom/datatables/datatables.bundle.js?v=7.0.5"></script>
+    <script src="{{url('')}}/admin_assets/plugins/custom/datatables/dataTables.bootstrap4.min.js"></script>
     <script src="{{url('')}}/admin_assets/custom/js/roles/role.js"></script>
 @endpush

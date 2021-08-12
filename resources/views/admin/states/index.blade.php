@@ -1,7 +1,6 @@
 @extends('admin.layout')
 
 @push('css')
-    <link href="{{url('')}}/admin_assets/plugins/custom/datatables/datatables.bundle.rtl.css?v=7.0.5" rel="stylesheet" type="text/css"/>
 @endpush
 
 @section('content')
@@ -57,6 +56,6 @@
         var options = {!! $options !!};
         var countries = {!! $countries !!};
     </script>
-    <script src="{{url('')}}/admin_assets/plugins/custom/datatables/datatables.bundle.js?v=7.0.5"></script>
+    <script src="{{url('')}}/admin_assets/plugins/custom/datatables/dataTables.bootstrap4.min.js"></script>
     <script src="{{url('')}}/admin_assets/custom/js/states/state.js"></script>
 @endpush

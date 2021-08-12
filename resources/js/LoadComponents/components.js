@@ -1,5 +1,4 @@
 import VueLazyload from 'vue-lazyload'
-
 Vue.mixin(require('./trans.js'));
 Vue.component('success-error-msg', require('../components/general/SuccessErrorMsg.vue').default);
 Vue.component('image-comp', require('../components/ImageComponent/ImageComp.vue').default);
@@ -18,6 +17,8 @@ Vue.component('option-comp', require('../components/general/OptionComp.vue').def
 
 Vue.component('place-comp', require('../components/general/PlaceComp.vue').default);
 Vue.component('custom-time-picker-comp', require('../components/general/CustomTimePickerComp.vue').default);
+Vue.component('custom-summernote-comp', require('../components/general/CustomSummernoteComp.vue').default);
+Vue.component('custom-select2-remote-comp', require('../components/general/CustomSelect2RemoteComp.vue').default);
 
 Vue.use(VueLazyload);
 // or with options

@@ -68,13 +68,33 @@
                 @check_role('view_user|add_user|edit_user|delete_user')
                 <li class="menu-item {{$active_menu == "employees" ? 'menu-item-active': ''}}" aria-haspopup="true">
                     <a href="{{route('admin.users.index' , ['type' => 2])}}" class="menu-link">
-                        <i class="menu-icon fas fa-user"></i>
+                        <i class="menu-icon fas fa-user-clock"></i>
                         <span class="menu-text">{{trans('admin.employees')}}</span>
                     </a>
                 </li>
                 @endcheck_role
 
+                <li class="menu-item {{$active_menu == "salon_branches" ? 'menu-item-active': ''}}" aria-haspopup="true">
+                    <a href="{{route('admin.salon_branches.index' )}}" class="menu-link">
+                        <i class="menu-icon fas fa-list-alt"></i>
+                        <span class="menu-text">{{trans('admin.salon_branches')}}</span>
+                    </a>
+                </li>
 
+                <li class="menu-item {{$active_menu == "salons" ? 'menu-item-active': ''}}" aria-haspopup="true">
+                    <a href="{{route('admin.salons.index' )}}" class="menu-link">
+                        <i class="menu-icon fas fa-list-alt"></i>
+                        <span class="menu-text">{{trans('admin.salons')}}</span>
+                    </a>
+                </li>
+
+
+                <li class="menu-item {{$active_menu == "sliders" ? 'menu-item-active': ''}}" aria-haspopup="true">
+                    <a href="{{route('admin.sliders.index' )}}" class="menu-link">
+                        <i class="menu-icon fas fa-list-alt"></i>
+                        <span class="menu-text">{{trans('admin.sliders')}}</span>
+                    </a>
+                </li>
                 {{--@check_role('view_notification|add_notification')--}}
                 {{--<li class="menu-item {{$active_menu == "notifications" ? 'menu-item-active': ''}}" aria-haspopup="true">--}}
                     {{--<a href="{{route('admin.notifications.index')}}" class="menu-link">--}}
@@ -102,14 +122,14 @@
                 </li>
                 @endcheck_role
 
-                @check_role('view_neighborhood|add_neighborhood|edit_neighborhood|delete_neighborhood')
-                <li class="menu-item {{$active_menu == "neighborhoods" ? 'menu-item-active': ''}}" aria-haspopup="true">
-                    <a href="{{route('admin.neighborhoods.index')}}" class="menu-link">
-                        <i class="menu-icon fas fa-city"></i>
-                        <span class="menu-text">{{trans('admin.neighborhoods')}}</span>
-                    </a>
-                </li>
-                @endcheck_role
+                {{--@check_role('view_neighborhood|add_neighborhood|edit_neighborhood|delete_neighborhood')--}}
+                {{--<li class="menu-item {{$active_menu == "neighborhoods" ? 'menu-item-active': ''}}" aria-haspopup="true">--}}
+                    {{--<a href="{{route('admin.neighborhoods.index')}}" class="menu-link">--}}
+                        {{--<i class="menu-icon fas fa-city"></i>--}}
+                        {{--<span class="menu-text">{{trans('admin.neighborhoods')}}</span>--}}
+                    {{--</a>--}}
+                {{--</li>--}}
+                {{--@endcheck_role--}}
 
 
                 @check_role('view_gallery|add_gallery|edit_gallery|delete_gallery')

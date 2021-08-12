@@ -23,12 +23,6 @@
                     </div>
 
                     <div class="col-lg-3">
-                        <label>{{__('admin.password')}}</label>
-                        <input type="password" v-model="obj_data.password" :placeholder="__('admin.password')"
-                               class="form-control">
-                    </div>
-
-                    <div class="col-lg-3">
                         <label>{{__('admin.phone')}}</label>
                         <div class="input-group">
                             <input type="text" v-model="obj_data.phone" :placeholder="__('admin.phone')"
@@ -46,6 +40,12 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
+
+                    <div class="col-lg-3">
+                        <label>{{__('admin.password')}}</label>
+                        <input type="password" v-model="obj_data.password" :placeholder="__('admin.password')"
+                               class="form-control">
                     </div>
                 </div>
                 <div class="form-group row">

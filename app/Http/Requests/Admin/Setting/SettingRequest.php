@@ -23,7 +23,7 @@ class SettingRequest extends BaseRequest
     {
         $data = parent::all(null);
         $data = array_merge($data ,$this->getLangData(['place','phone','email','facebook','twitter',
-            'instagram','snapchat', 'privacy_policy','prevented_goods' ,'about_us' ,'about_app' , 'app_ratio']));
+            'instagram','snapchat', 'privacy_policy' ,'about_us' ,'about_app' ]));
         return $data;
     }
 

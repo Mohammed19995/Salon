@@ -17,8 +17,8 @@ class CreateUserWorkingTimesTable extends Migration
             $table->id();
             $table->foreignId('user_id')->constrained('users');
             $table->tinyInteger('day_id');
-            $table->time('start');
-            $table->time('end');
+            $table->time('start_at');
+            $table->time('end_at');
             $table->tinyInteger('status')->default(1);
             $table->timestamps();
         });

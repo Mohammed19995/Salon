@@ -1,10 +1,6 @@
 @extends('admin.layout')
 
 @push('css')
-    <link href="{{url('')}}/admin_assets/plugins/custom/datatables/datatables.bundle.rtl.css?v=7.0.5" rel="stylesheet"
-          type="text/css"/>
-    <link rel="stylesheet" href="{{url('')}}/admin_assets/custom/css/plugins/magnific-popup.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
 
 @endpush
 
@@ -36,7 +32,7 @@
                         <th>{{trans('admin.name')}}</th>
                         <th>{{trans('admin.country_code')}}</th>
                         <th>{{trans('admin.phone_code')}}</th>
-                        <th>{{trans('admin.currency')}}</th>
+{{--                        <th>{{trans('admin.currency')}}</th>--}}
                         <th>{{trans('admin.status')}}</th>
                         <th>{{trans('admin.control')}}</th>
                     </tr>
@@ -55,7 +51,7 @@
         var default_image = "{{getPath('countries' ,'true')}}";
         var options = {!! $options !!};
     </script>
-    <script src="{{url('')}}/admin_assets/plugins/custom/datatables/datatables.bundle.js?v=7.0.5"></script>
+    <script src="{{url('')}}/admin_assets/plugins/custom/datatables/dataTables.bootstrap4.min.js"></script>
     <script src="{{url('')}}/admin_assets/custom/js/plugins/magnific-popup.min.js"></script>
 
 

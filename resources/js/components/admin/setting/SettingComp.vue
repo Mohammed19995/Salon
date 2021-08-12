@@ -27,14 +27,14 @@
                                class="form-control">
                     </div>
                 </div>
-                <div class="form-group row">
-                    <div class="col-sm-6">
-                        <label>{{__('admin.app_ratio')}}</label>
-                        <input type="text" v-model="obj_data.app_ratio[locale]" :placeholder="__('admin.app_ratio')"
-                               class="form-control">
-                    </div>
+                <!--<div class="form-group row">-->
+                    <!--<div class="col-sm-6">-->
+                        <!--<label>{{__('admin.app_ratio')}}</label>-->
+                        <!--<input type="text" v-model="obj_data.app_ratio[locale]" :placeholder="__('admin.app_ratio')"-->
+                               <!--class="form-control">-->
+                    <!--</div>-->
 
-                </div>
+                <!--</div>-->
                 <div class="form-group row">
                     <div class="col">
                         <label>{{__('admin.facebook')}}</label>
@@ -62,28 +62,22 @@
                 <div class="form-group row">
                     <div class="col" v-for="locale in locales">
                         <label>{{__('admin.privacy_policy_' + locale)}}</label>
-                        <div class="custom-summernote" :class="'custom-summernote-privacy_policy-'+locale"></div>
+                        <custom-summernote-comp :content="privacy_policy[locale]"  v-model="obj_data.privacy_policy[locale]"></custom-summernote-comp>
 
                     </div>
                 </div>
-                <div class="form-group row">
-                    <div class="col" v-for="locale in locales">
-                        <label>{{__('admin.prevented_goods_' + locale)}}</label>
-                        <div class="custom-summernote" :class="'custom-summernote-prevented_goods-'+locale"></div>
 
-                    </div>
-                </div>
                 <div class="form-group row">
                     <div class="col" v-for="locale in locales">
                         <label>{{__('admin.about_us_' + locale)}}</label>
-                        <div class="custom-summernote" :class="'custom-summernote-about_us-'+locale"></div>
+                        <custom-summernote-comp :content="about_us[locale]" v-model="obj_data.about_us[locale]"></custom-summernote-comp>
 
                     </div>
                 </div>
                 <div class="form-group row">
                     <div class="col" v-for="locale in locales">
                         <label>{{__('admin.about_app_' + locale)}}</label>
-                        <div class="custom-summernote" :class="'custom-summernote-about_app-'+locale"></div>
+                        <custom-summernote-comp :content="about_app[locale]" v-model="obj_data.about_app[locale]"></custom-summernote-comp>
 
                     </div>
                 </div>
@@ -112,8 +106,13 @@
         props: ['data'],
         data: function () {
             return {
+                obj_data : {},
                 multi_language_fields : ['place','phone','email','facebook','twitter','instagram','snapchat',
-                    'privacy_policy' , 'prevented_goods' , 'about_us' , 'about_app' , 'app_ratio'],
+                    'privacy_policy'  , 'about_us' , 'about_app' ],
+
+                privacy_policy : {},
+                about_us : {},
+                about_app : {},
             }
         },
         filters: {},
@@ -123,15 +122,10 @@
         methods: {
             setObjData: function () {
                 let this_ = this;
-                this.obj_data = JSON.parse(JSON.stringify(this.data));
-
-                Vue.nextTick(function () {
-                    this_.setSummernoteData(this_.obj_data.privacy_policy, 'privacy_policy');
-                    this_.setSummernoteData(this_.obj_data.prevented_goods, 'prevented_goods');
-                    this_.setSummernoteData(this_.obj_data.about_us, 'about_us');
-                    this_.setSummernoteData(this_.obj_data.about_app, 'about_app');
-                });
-
+                this.obj_data = this.data;
+                this.privacy_policy = JSON.parse(JSON.stringify(this.obj_data.privacy_policy));
+                this.about_us = JSON.parse(JSON.stringify(this.obj_data.about_us));
+                this.about_app = JSON.parse(JSON.stringify(this.obj_data.about_app));
             },
 
             makeAction: function () {
@@ -140,11 +134,6 @@
             updateSetting: function () {
                 let this_ = this;
                 var formData = new FormData();
-                this.getSummernoteData(this.obj_data.privacy_policy, 'privacy_policy');
-                this.getSummernoteData(this.obj_data.prevented_goods, 'prevented_goods');
-                this.getSummernoteData(this.obj_data.about_us, 'about_us');
-                this.getSummernoteData(this.obj_data.about_app, 'about_app');
-
 
                 Object.keys(this.obj_data).forEach(function (key) {
                     formData.append(key, this_.multi_language_fields.includes(key) ? JSON.stringify(this_.obj_data[key]) : this_.obj_data[key]);
@@ -163,18 +152,7 @@
                 });
             },
 
-            getSummernoteData: function (obj, attr) {
-                Object.keys(getMultiLangField()).forEach(key => {
-                    obj[key] = $('.custom-summernote-' + attr + '-' + key).summernote('code');
-                });
 
-            },
-            setSummernoteData: function (obj, attr) {
-                Object.keys(getMultiLangField()).forEach(key => {
-                    $('.custom-summernote-' + attr + '-' + key).summernote("code", obj[key]);
-                });
-
-            }
         },
         watch: {
         }

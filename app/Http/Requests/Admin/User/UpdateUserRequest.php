@@ -30,9 +30,10 @@ class UpdateUserRequest extends BaseRequest
             $data['working_times'] = json_decode(  $data['working_times'], true);
             $data['category_ids'] = json_decode(  $data['category_ids'], true);
             for ($i = 0 ; $i < count($data['working_times']) ; $i++) {
-                $data['working_times'][$i]['start'] = Carbon::createFromFormat('h:i A' ,$data['working_times'][$i]['start'] )->format('H:i');
-                $data['working_times'][$i]['end'] = Carbon::createFromFormat('h:i A' ,$data['working_times'][$i]['end'] )->format('H:i');
-
+                $data['working_times'][$i]['start_at'] = Carbon::createFromFormat('h:i A' ,$data['working_times'][$i]['start'] )->format('H:i');
+                $data['working_times'][$i]['end_at'] = Carbon::createFromFormat('h:i A' ,$data['working_times'][$i]['end'] )->format('H:i');
+                unset($data['working_times'][$i]['start']);
+                unset($data['working_times'][$i]['end']);
             }
         }
         return $data;
@@ -61,10 +62,11 @@ class UpdateUserRequest extends BaseRequest
 
         ];
         if($this->request->get('type') == 2) {
+            $rules['category_ids']              = ['required' , 'array' , 'min:1'];
             $rules['category_ids.*']            = ['required' , $this->checkExistsWithActive('categories','id')];
             $rules['working_times.*']           = ['required'];
-            $rules['working_times.*.start']     = ['required'];
-            $rules['working_times.*.end']       = ['required'];
+            $rules['working_times.*.start_at']  = ['required'];
+            $rules['working_times.*.end_at']    = ['required'];
 
         }
         return $rules;

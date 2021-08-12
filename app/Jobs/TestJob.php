@@ -33,7 +33,6 @@ class TestJob implements ShouldQueue
      */
     public function handle()
     {
-        FirebaseFirestoreFacade::updateAuction(Auction::find(29));
-       // Order::first()->update(['status' => 7]);
+//        Log::info('AAAAA');
     }
 }

@@ -25,12 +25,6 @@
                     </div>
 
                     <div class="col-lg-3">
-                        <label>{{__('admin.password')}}</label>
-                        <input type="password" v-model="obj_data.password" :placeholder="__('admin.password')"
-                               class="form-control">
-                    </div>
-
-                    <div class="col-lg-3">
                         <label>{{__('admin.phone')}}</label>
                         <div class="input-group">
                             <input type="text" v-model="obj_data.phone" :placeholder="__('admin.phone')"
@@ -49,6 +43,12 @@
                             </div>
                         </div>
                     </div>
+
+                    <div class="col-lg-3">
+                        <label>{{__('admin.password')}}</label>
+                        <input type="password" v-model="obj_data.password" :placeholder="__('admin.password')"
+                               class="form-control">
+                    </div>
                 </div>
                 <div class="form-group row">
                     <div class="col">
@@ -62,37 +62,7 @@
                 </div>
                 <div class="form-group row">
 
-                    <div class="col-lg-8">
-                        <label>{{__('admin.select_category')}}</label>
-                        <div class="dropdown bootstrap-select form-control dropup">
-                            <select class="form-control selectpicker select_category" multiple v-model="obj_data.category_ids"
-                                    data-size="7" data-live-search="true"
-                                    tabindex="null"
-                                    :data-none-selected-text="__('admin.select_category')">
-
-                                <optgroup v-for="category in categories" :label="category.name[locale]">
-                                    <option v-for="child in category.get_children" :value="child.id">
-                                        {{child.name[locale]}}
-                                    </option>
-                                </optgroup>
-
-
-                            </select>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <button type="button" style="margin-top: -25%" class="btn btn-primary mr-4"
-                                @click="SelectImageFromGallery(file1_data.attr_name ,file1_data.selector_id_image )">
-                            {{__('admin.select_image')}}
-                        </button>
-                        <show-image-comp @clear-emit-file="clearEmitFile" :attr_name="file1_data.attr_name"
-                                         :selector_id_image="file1_data.selector_id_image"
-                                         :shock_event="shock_event" :file1_data="file1_data">
-                        </show-image-comp>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-8">
+                    <div class="col-sm-4">
                         <label>{{__('admin.working_hours')}}</label>
                         <table class="table">
                             <tr>
@@ -121,6 +91,34 @@
                         </table>
 
 
+                    </div>
+                    <div class="col-lg-5">
+                        <label>{{__('admin.select_category')}}</label>
+                        <div class="dropdown bootstrap-select form-control dropup">
+                            <select class="form-control selectpicker select_category" multiple v-model="obj_data.category_ids"
+                                    data-size="7" data-live-search="true"
+                                    tabindex="null"
+                                    :data-none-selected-text="__('admin.select_category')">
+
+                                <optgroup v-for="category in categories" :label="category.name[locale]">
+                                    <option v-for="child in category.get_children" :value="child.id">
+                                        {{child.name[locale]}}
+                                    </option>
+                                </optgroup>
+
+
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <button type="button" style="margin-top: -25%" class="btn btn-primary mr-4"
+                                @click="SelectImageFromGallery(file1_data.attr_name ,file1_data.selector_id_image )">
+                            {{__('admin.select_image')}}
+                        </button>
+                        <show-image-comp @clear-emit-file="clearEmitFile" :attr_name="file1_data.attr_name"
+                                         :selector_id_image="file1_data.selector_id_image"
+                                         :shock_event="shock_event" :file1_data="file1_data">
+                        </show-image-comp>
                     </div>
                 </div>
                 <hr>

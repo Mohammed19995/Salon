@@ -1,9 +1,7 @@
 @extends('admin.layout')
 
 @push('css')
-    <link href="{{url('')}}/admin_assets/plugins/custom/datatables/datatables.bundle.rtl.css?v=7.0.5" rel="stylesheet"
-          type="text/css"/>
-    <link rel="stylesheet" href="{{url('')}}/admin_assets/custom/css/plugins/magnific-popup.min.css">
+
     <style>
         .select_phone_code {
             border-radius: 0 !important;
@@ -131,7 +129,7 @@
         var types = {!! $types !!};
         var phone_code_statuses = {!! $phone_code_statuses !!};
     </script>
-    <script src="{{url('')}}/admin_assets/plugins/custom/datatables/datatables.bundle.js?v=7.0.5"></script>
+    <script src="{{url('')}}/admin_assets/plugins/custom/datatables/dataTables.bootstrap4.min.js"></script>
     <script src="{{url('')}}/admin_assets/custom/js/plugins/magnific-popup.min.js"></script>
     <script src="{{url('')}}/admin_assets/custom/js/users/user.js"></script>
 @endpush

@@ -75,7 +75,7 @@ return [
 
 
     'error_in_execute_option' => 'خطأ في تنفيذ الاجراء',
-    'cant_delete_because_have_auction' => '<span style="color: blue">المستخدم :name</span> : لا يمكن الحذف لانه يملك مزادات',
+    'cant_delete_because_have_salons' => '<span style="color: blue">المستخدم :name</span> : لا يمكن الحذف لانه يملك صالونات',
     'cant_delete_because_have_orders' => '<span style="color: blue">المستخدم :name</span> : لا يمكن الحذف لانه يملك دفعات',
     'cant_delete_because_have_prices' => '<span style="color: blue">المزاد :name</span> : لا يمكن الحذف لانه يملك مستخدمين قامو بتقديم عروض أسعار',
     'cant_delete_because_have_bank_transfer' => '<span style="color: blue">البنك :name</span> : لا يمكن الحذف لانه يملك حوالات بنكية',

@@ -82,8 +82,27 @@ Route::group(['prefix' => 'admin', 'namespace' => 'Admin'], function () {
         Route::get('get-remote-city-neighborhoods/{city_id}' , 'NeighborhoodController@getRemoteCityNeighborhoods');
         Route::post('neighborhoods/execute-option' , 'NeighborhoodController@executeOptions');
 
+        // salon categories
+        Route::resource('salon-branches' , 'SalonBranchController')->names(['index' => 'admin.salon_branches.index']);
+        Route::get('get-remote-salon-branches' , 'SalonBranchController@get_remote_brands');
+        Route::post('salon-branches/execute-option' , 'SalonBranchController@executeOptions');
+
+
+        // Sliders
+        Route::resource('sliders' , 'SliderController')->names(['index' => 'admin.sliders.index']);
+        Route::get('get-remote-sliders' , 'SliderController@getRemoteSliders');
+        Route::post('sliders/execute-option' , 'SliderController@executeOptions');
+
+
+
         // places
         Route::resource('places' , 'PlaceController')->names(['index' => 'admin.places.index']);
+
+        // salons
+        Route::resource('salons' , 'Salon\SalonController')->names(['index' => 'admin.salons.index']);
+        Route::get('get-remote-salons' , 'Salon\SalonController@getRemoteSalons');
+        Route::post('salons/execute-option' , 'Salon\SalonController@executeOptions');
+
 
         // roles
         Route::resource('roles' , 'RoleController')->names(['index' => 'admin.roles.index']);
@@ -101,10 +120,6 @@ Route::group(['prefix' => 'admin', 'namespace' => 'Admin'], function () {
 
 
 
-        // agora
-        Route::get('/agora-chat', 'Agora\AgoraController@index')->name('admin.chat.index');
-        Route::post('/agora/token', 'Agora\AgoraController@token');
-        Route::post('/agora/call-user', 'Agora\AgoraController@callUser');
     });
 });
 Auth::routes();
@@ -118,32 +133,3 @@ Route::get('reset-password-success' , function (){
 Route::get('test','TestController@index');
 Route::get('test-api','TestController@testApi');
 Route::get('test-session','TestController@testSession');
-
-//// web
-//Route::group([ 'namespace' => 'Website' , 'middleware' => ['get_user' , 'check_language']], function () {
-//    Route::get('/' ,'IndexController@index')->name('website.index');
-//
-//    // auth
-//    Route::get('auth' ,'AuthController@index')->name('website.auth');
-//    Route::post('login' , 'AuthController@login');
-//    Route::post('register' , 'AuthController@register');
-//    Route::get('logout' , 'AuthController@logout');
-//
-//    // reset password
-//    Route::get('website/password/forget' , 'ResetPasswordController@showSendResetLink');
-//    Route::get('website/password/reset' , 'ResetPasswordController@index')->name('custom.password.reset');
-//
-//    Route::group([ 'middleware' => ['auth:web']], function () {
-//        Route::get('orders/{order}' ,'OrderController@show');
-//        Route::get('checkout' ,'CheckoutController@index');
-//
-//        Route::get('bank-transfer' ,'BankController@index');
-//        Route::get('my-account' ,'MyAccountController@index');
-//        Route::get('account' ,'AccountController@index');
-//
-//        Route::resource('pharmacies' ,'PharmacyController');
-//
-//    });
-//
-//});
-//

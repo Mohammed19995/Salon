@@ -37,9 +37,9 @@ class CategoryController extends HomeController
 
     public function index()
     {
-        parent::$data['categories'] = $this->getCategoryAsSpecificArrange();
-        parent::$data['options'] = $this->options(['active' , 'not_active' , 'delete']);
-        return view('admin.categories.index', parent::$data);
+        self::$data['categories'] = collect(Cache::get('categories_cache'))->whereNull('parent_id');
+        self::$data['options'] = $this->options(['active' , 'not_active' , 'delete']);
+        return view('admin.categories.index', self::$data);
     }
 
 

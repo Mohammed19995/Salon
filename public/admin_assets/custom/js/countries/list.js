@@ -11,7 +11,7 @@ var DatatablesDataSourceAjaxServer = {
                 vm.ids = [];
                 $('.test-popup-link').magnificPopup({type:'image'});
             },
-            order: [6 , 'desc'],
+            order: [5 , 'desc'],
             ajax: {
                 url: api_urls.admin.country.get_remote,
                 data: function (e) {
@@ -23,7 +23,7 @@ var DatatablesDataSourceAjaxServer = {
                 {data: `name.${_locale}`, name : `name->${_locale}`, width : "200px"},
                 {data: "iso2"},
                 {data: "phone_code" ,  class : 'dir-ltr'},
-                {data: `currency.symbol.en`, name : `currency.symbol->en`, width : "200px"},
+                // {data: `currency.symbol.en`, name : `currency.symbol->en`, width : "200px"},
                 {data: "show_status" ,name : 'status' },
                 {data: "actions" , searchable : false , orderable : false},
 

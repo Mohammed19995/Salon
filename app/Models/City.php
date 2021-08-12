@@ -24,9 +24,9 @@ class City extends Model
         return $this->belongsTo(Country::class , 'country_id');
     }
 
-    public function auctions()
+    public function salons()
     {
-        return $this->hasMany(Auction::class, 'city_id');
+        return $this->hasMany(Salon::class, 'city_id');
     }
     public function users()
     {

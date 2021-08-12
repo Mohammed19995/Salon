@@ -118,12 +118,6 @@ Route::get('test-integration' , function (){
     return app(\Illuminate\Contracts\Bus\Dispatcher::class)->dispatch($test);
 });
 
-//
-//Route::get('sanc/login' , function (){
-//    $user = \Illuminate\Support\Facades\Auth::guard('web')->login(\App\Models\User::latest()->first());
-//    return response()->json($user);
-//});
-//Route::get('sanc/logout', function (Request $request) { \Illuminate\Support\Facades\Auth::guard('web')->logout(); return "done"; });
-//Route::get('sanc/user' , function (Request $request){
-//    return response()->json(\Illuminate\Support\Facades\Auth::guard('web')->user());
-//})->middleware('auth:sanctum');
+Route::get('test1' , function (Request $request){
+    return $request->data;
+});

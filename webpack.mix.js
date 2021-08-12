@@ -39,6 +39,13 @@ mix.js('resources/js/LoadComponents/admin/admin.js', 'public/admin_assets/custom
 // category
 mix.js('resources/js/LoadComponents/admin/category.js', 'public/admin_assets/custom/js/categories/category.js');
 
+// salon category
+mix.js('resources/js/LoadComponents/admin/salon_branch.js', 'public/admin_assets/custom/js/salon_branches/salon_branch.js');
+
+// auction
+mix.js('resources/js/LoadComponents/admin/salon/salon.js', 'public/admin_assets/custom/js/salons/salon.js');
+mix.js('resources/js/LoadComponents/admin/salon/salon_form.js', 'public/admin_assets/custom/js/salons/salon_form.js');
+
 
 // place
 mix.js('resources/js/LoadComponents/admin/country.js', 'public/admin_assets/custom/js/countries/country.js');
@@ -54,4 +61,6 @@ mix.js('resources/js/LoadComponents/admin/setting.js', 'public/admin_assets/cust
 // notification
 mix.js('resources/js/LoadComponents/admin/notification.js', 'public/admin_assets/custom/js/notifications/notification.js');
 
+// notification
+mix.js('resources/js/LoadComponents/admin/slider.js', 'public/admin_assets/custom/js/sliders/slider.js');
 

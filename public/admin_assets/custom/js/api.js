@@ -61,33 +61,28 @@ window.api_admin_urls = {
         get_remote : endpoint+'/admin/get-remote-nationalities' ,
         execute_option : endpoint+'/admin/nationalities/execute-option' ,
     },
-    complaint_category : {
-        add : endpoint+'/admin/complaint-categories' ,
-        get_remote : endpoint+'/admin/get-remote-complaint-categories' ,
-        execute_option : endpoint+'/admin/complaint-categories/execute-option' ,
-    },
-    
-    order : {
-        add : endpoint+'/admin/orders' ,
-        get_remote : endpoint+'/admin/get-remote-orders' ,
-        execute_option : endpoint+'/admin/orders/execute-option' ,
-    },
+
 
     role : {
         add : endpoint+'/admin/roles' ,
         get_remote : endpoint+'/admin/get-remote-roles' ,
         execute_option : endpoint+'/admin/roles/execute-option' ,
     },
-    brand : {
-        add : endpoint+'/admin/brands' ,
-        get_remote : endpoint+'/admin/get-remote-brands' ,
-        execute_option : endpoint+'/admin/brands/execute-option' ,
+    salon_category : {
+        add : endpoint+'/admin/salon-branches' ,
+        get_remote : endpoint+'/admin/get-remote-salon-branches' ,
+        execute_option : endpoint+'/admin/salon-branches/execute-option' ,
     },
-    auction : {
-        add : endpoint+'/admin/auctions' ,
-        get_remote : endpoint+'/admin/get-remote-auctions' ,
-        execute_option : endpoint+'/admin/auctions/execute-option' ,
-        get_remote_auction_prices : endpoint+'/admin/get-remote-auction-prices' ,
+
+    salon : {
+        add : endpoint+'/admin/salons' ,
+        get_remote : endpoint+'/admin/get-remote-salons' ,
+        execute_option : endpoint+'/admin/salons/execute-option' ,
+    },
+    slider : {
+        add : endpoint+'/admin/sliders' ,
+        get_remote : endpoint+'/admin/get-remote-sliders' ,
+        execute_option : endpoint+'/admin/sliders/execute-option' ,
     },
     setting : {
         update :  endpoint+'/admin/settings' ,
@@ -97,16 +92,7 @@ window.api_admin_urls = {
         add :  endpoint+'/admin/notifications' ,
         notification_users : endpoint+'/admin/notification-users' ,
     },
-    bank : {
-        add : endpoint+'/admin/banks' ,
-        get_remote : endpoint+'/admin/get-remote-banks' ,
-        execute_option : endpoint+'/admin/banks/execute-option' ,
-    },
-    bank_transfer : {
-        add : endpoint+'/admin/bank-transfers' ,
-        get_remote : endpoint+'/admin/get-remote-bank-transfers' ,
-        execute_option : endpoint+'/admin/bank-transfers/execute-option' ,
-    },
+
 };
 
 window.api_urls = {

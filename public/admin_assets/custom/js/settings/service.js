@@ -13,10 +13,8 @@ window.vm = new Vue({
             instagram : instagram.value ,
             snapchat : snapchat.value ,
             privacy_policy : privacy_policy.value ,
-            prevented_goods : prevented_goods.value ,
             about_us : about_us.value ,
             about_app : about_app.value ,
-            app_ratio : app_ratio.value,
 
         },
     },
@@ -27,7 +25,6 @@ window.vm = new Vue({
 
     }
 });
-
 
 $(document).ready(function () {
     // init
