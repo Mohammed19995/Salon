@@ -35,7 +35,7 @@ Route::group(['middleware' => ['check_language', 'get_user'], 'namespace' => 'Ap
     Route::post('password/confirm-code', 'User\ResetPasswordController@confirmResetCode');
 
 
-    Route::group(['middleware' => ['auth:api','check_status_api']], function () {
+    Route::group(['middleware' => ['auth:api', 'check_status_api']], function () {
 
         // reset password
         Route::post('password/reset', 'User\ResetPasswordController@resetPassword');
@@ -92,7 +92,7 @@ Route::group(['middleware' => ['check_language', 'get_user'], 'namespace' => 'Ap
 
 
                 // statistic
-                Route::get('statistic' , 'StatisticController@ownerRoomStatistic');
+                Route::get('statistic', 'StatisticController@ownerRoomStatistic');
 
             });
 
@@ -108,16 +108,23 @@ Route::group(['middleware' => ['check_language', 'get_user'], 'namespace' => 'Ap
 Route::get('tap-payment', 'Api\Payment\PaymentController@completePayment');
 
 
-Route::get('countries' , function (){
+Route::get('countries', function () {
     return \App\Models\Country::all();
 });
 
-Route::get('test-integration' , function (){
+Route::get('test-integration', function () {
 //    $test = (new \App\Events\TestEvent())->delay(\Carbon\Carbon::now()->addMinutes(1));
     $test = (new \App\Jobs\TestJob())->delay(\Carbon\Carbon::now()->addMinutes(1));
     return app(\Illuminate\Contracts\Bus\Dispatcher::class)->dispatch($test);
 });
 
-Route::get('test1' , function (Request $request){
+Route::get('test1', function (Request $request) {
     return $request->data;
+});
+
+Route::get('send_test_email', function () {
+    \Mail::send('email.email', [], function ($message) {
+        $message->to("mohamg1995@gmail.com", 'USER')->subject('Test Email');
+    });
+    echo("The massage email has been send");
 });
