@@ -6,7 +6,7 @@ class TreeFunction {
 
     public function getHasManyElements($obj)
     {
-        $result = array();
+        $result = [];
         foreach ($obj as  $row) {
             $result[] = $row;
             if (count($row->allchildren) > 0) {
@@ -18,7 +18,7 @@ class TreeFunction {
 
     public function getBelongsToElements($obj)
     {
-        $result = array();
+        $result = [];
         if (!is_null($obj)) {
             $result[] = $obj;
             if (!is_null($obj->allparents)) {

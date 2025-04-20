@@ -4,11 +4,11 @@ namespace App\Services\Tree;
 class SWWWTreeTraversal {
 
     protected $tree;
-    protected $output = array();
+    protected $output = [];
 
 
     public function __construct($conf){
-        $this->tree = isset($conf['tree']) ? $conf['tree'] : array();
+        $this->tree = isset($conf['tree']) ? $conf['tree'] : [];
         $this->preorder($this->tree);
     }
 
