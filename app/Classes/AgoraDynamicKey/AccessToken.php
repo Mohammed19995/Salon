@@ -14,7 +14,7 @@ class Message
         $date = new \DateTime("now", new \DateTimeZone('UTC'));
         $this->ts = $date->getTimestamp() + 24 * 3600;
 
-        $this->privileges = array();
+        $this->privileges = [];
     }
 
     public function packContent()
@@ -39,7 +39,7 @@ class Message
         $size = unpack("v", substr($msg, $pos, 2))[1];
         $pos += 2;
 
-        $privileges = array();
+        $privileges = [];
         for ($i = 0; $i < $size; $i++) {
             $key = unpack("v", substr($msg, $pos, 2));
             $pos += 2;
@@ -55,7 +55,7 @@ class Message
 
 class AccessToken
 {
-    const Privileges = array(
+    const Privileges = [
         "kJoinChannel" => 1,
         "kPublishAudioStream" => 2,
         "kPublishVideoStream" => 3,
@@ -70,7 +70,7 @@ class AccessToken
         "kInvitePublishDataStream" => 12,
         "kAdministrateChannel" => 101,
         "kRtmLogin" => 1000,
-    );
+    ];
 
     public $appID, $appCertificate, $channelName, $uid;
     public $message;
